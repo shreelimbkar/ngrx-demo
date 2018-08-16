@@ -17,6 +17,7 @@ export class AppComponent {
   title = 'app';
 
   constructor(private store: Store<AppState>) {
+    console.log(this.store);
     this.message$ = this.store.select('message') 
   }
 
